@@ -86,3 +86,19 @@ doc/Doxygen/DTAGS
 # Ignore the test directory and unpublished files
 /tutorialsTest
 /TODO
+
+**/constant/**/polyMesh/points*
+**/constant/**/polyMesh/faces*
+**/constant/**/polyMesh/owner*
+**/constant/**/polyMesh/neighbour*
+**/constant/**/polyMesh/boundary*
+**/constant/**/polyMesh/sets
+**/constant/**/polyMesh/*
+
+processor*
+log.*
+*log
+forces
+postProcessing
+[0-9]*/
+!**/0.orig/

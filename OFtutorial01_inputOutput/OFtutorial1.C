@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     );
 
     // Check the if the dictionary is present and follows the OF format
-    if (!dictIO.typeHeaderOk<dictionary>(true))
+    if (!dictIO.headerOk())
         FatalErrorIn(args.executable()) << "Cannot open specified refinement dictionary "
             << dictName << exit(FatalError);
 

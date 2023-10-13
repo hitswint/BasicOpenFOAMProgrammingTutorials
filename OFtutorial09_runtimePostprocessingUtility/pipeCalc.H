@@ -132,6 +132,9 @@ public:
     //- Read the pipeCalc data
     virtual bool read(const dictionary&);
 
+    //- Return the list of fields required
+    virtual wordList fields() const;
+
     //- Execute, currently does nothing
     virtual bool execute();
 
@@ -145,10 +148,10 @@ public:
     virtual bool write();
 
     //- Update for changes of mesh
-    virtual void updateMesh(const mapPolyMesh&) {}
+    // virtual void updateMesh(const mapPolyMesh&) {}
 
     //- Update for changes of mesh
-    virtual void movePoints(const polyMesh&) {}
+    // virtual void movePoints(const polyMesh&) {}
 };
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

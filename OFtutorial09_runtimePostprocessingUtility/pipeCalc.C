@@ -137,6 +137,11 @@ bool Foam::functionObjects::pipeCalc::read(const dictionary& dict)
     return true;
 }
 
+Foam::wordList Foam::functionObjects::pipeCalc::fields() const
+{
+    return wordList{"U"};
+}
+
 bool Foam::functionObjects::pipeCalc::execute()
 {
     if (active_)
